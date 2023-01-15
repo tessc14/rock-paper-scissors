@@ -1,5 +1,5 @@
 const rps = () => {
-    // const c = require('ansi-colors');
+    const c = require('ansi-colors');
     const prompt = require('prompt-sync')();
     const user_input = prompt('Rock, paper, scissors... ').toLowerCase();
 
@@ -13,11 +13,11 @@ const rps = () => {
         } else {
             console.log(`I said: ${our_input}`);
             if (user_input == our_input) {
-                console.log("It's a draw");
+                console.log(c.blue("It's a draw"));
             } else if ((user_input == "rock" && our_input == "scissors") || (user_input == "scissors" && our_input == "paper") || (user_input == "paper" && our_input == "rock")) {
-                console.log("You win!");
+                console.log(c.green("You win!"));
             } else if ((user_input == "rock" && our_input == "paper") || (user_input == "scissors" && our_input == "rock") || (user_input == "paper" && our_input == "scissors")){
-                console.log("You lose");
+                console.log(c.red("You lose"));
             }
         }    
 }
