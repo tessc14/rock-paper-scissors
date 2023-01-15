@@ -30,7 +30,7 @@ const rps = () => {
     }  
     let display = prompt("Would you like to see your results so far? Enter yes or any other key for no   ").toLowerCase();
     if (display === "yes") {
-        console.log(`Wins: $[wins], Losses $[losses], Draws $[draws]`)
+        console.log(`Wins: ${wins} , Losses: ${losses} , Draws: ${draws}`)
         }
     let replay = prompt("Play again? Enter yes or enter any other key to quit   ").toLowerCase();
     if (replay === "yes") {
