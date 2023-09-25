@@ -1,5 +1,6 @@
 ## A game of rock paper scissors
+A basic CLI game of rock paper scissors using JavaScript made for fun.
 
-### Install to run:
-    - npm install prompt-sync
-    - npm install ansi-colors
+### To run:
+    - npm install
+    (uses prompt-sync and ansi-colors)
